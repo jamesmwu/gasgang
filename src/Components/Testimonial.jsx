@@ -14,11 +14,7 @@ const Testimonial = () => {
 			</div>
 			<div className='testimonial-section-bottom'>
 				<img src={ProfilePic} alt='' />
-				<p>
-					I told Phillip my life story, to which he responded "EREN JAEGER" and
-					"AUUUUGHHHHHH". I then heard Ben call Kaity a midget and Amy reply
-					"ahhhHHHHHhHhhhh". 10/10 experience
-				</p>
+				<p>"He's here to meet a 15 year old girl!"</p>
 				<div className='testimonials-stars-container'>
 					<AiFillStar />
 					<AiFillStar />
@@ -26,7 +22,7 @@ const Testimonial = () => {
 					<AiFillStar />
 					<AiFillStar />
 				</div>
-				<h2>Deez Nuts</h2>
+				<h2>~ Ronald Li</h2>
 			</div>
 		</div>
 	);

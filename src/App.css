@@ -11,7 +11,7 @@ img {
 .App {
 	min-height: 100vh;
 	width: 85vw;
-	/* max-width: 1900px; */
+	/* max-width: 1200px; */
 	margin: 0rem auto;
 }
 body {
@@ -64,10 +64,17 @@ nav {
 	font-size: 1.5rem;
 	cursor: pointer;
 }
+
+.home-container {
+	justify-content: center;
+	display: flex;
+}
+
 .home-banner-container {
 	position: relative;
 	display: flex;
-	padding-top: 3rem;
+	padding-top: 5rem;
+	width: 1400px;
 }
 .home-bannerImage-container {
 	position: absolute;
@@ -99,6 +106,13 @@ nav {
 	color: #6a6a6a;
 	margin: 1.5rem 0rem;
 }
+.primary-text-left {
+	font-size: clamp(1rem, 3vw, 1.5rem);
+	max-width: 500px;
+	color: #6a6a6a;
+	margin: 1.5rem 0rem;
+	text-align: left !important;
+}
 .secondary-text {
 	font-size: clamp(1rem, 3vw, 1.2rem);
 	max-width: 500px;
@@ -128,12 +142,16 @@ nav {
 .secondary-button:hover {
 	background-color: #e48f0f;
 }
+.about-text-container {
+	display: flex;
+	width: 1400px;
+}
 .about-section-container {
-	margin-top: 20rem;
+	margin-top: 10rem;
 	position: relative;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 }
 .about-background-image-container {
 	position: absolute;
@@ -278,8 +296,15 @@ nav {
 	margin-top: 1.5rem;
 }
 .work-section-wrapper {
-	margin-top: 15rem;
+	margin-top: 10rem;
 }
+.work-desc-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
 .work-section-top p {
 	text-align: center;
 	max-width: 600px !important;
@@ -351,12 +376,21 @@ nav {
 		width: 100%;
 		max-width: 400px;
 	}
+	.about-text-container {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
 	.primary-heading {
 		text-align: center;
 		max-width: 90%;
 	}
 	.primary-text {
 		text-align: center;
+		max-width: 80%;
+	}
+	.primary-text-left {
+		text-align: left;
 		max-width: 80%;
 	}
 	.home-text-section,

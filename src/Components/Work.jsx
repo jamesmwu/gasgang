@@ -2,6 +2,7 @@ import React from 'react';
 import PickMeals from '../Assets/pick-meals-image.png';
 import ChooseMeals from '../Assets/choose-image.png';
 import DeliveryMeals from '../Assets/delivery-image.png';
+import WorkImage from '../Assets/work-image.png';
 
 const Work = () => {
 	const workInfoData = [
@@ -26,11 +27,15 @@ const Work = () => {
 			<div className='work-section-top'>
 				<p className='primary-subheading'>Work</p>
 				<h1 className='primary-heading'>We want money</h1>
-				<p className='primary-text'>
-					Some of us want internships. Others want medschool acceptances.
-					Collectively, this is the ultimate goal that unites us.
-				</p>
+				<div className='work-desc-flex'>
+					<p className='primary-text-left'>
+						Some of us want internships. Others want medschool acceptances.
+						Collectively, this is the ultimate goal that unites us.
+					</p>
+					<img src={WorkImage} alt='' />
+				</div>
 			</div>
+
 			<div className='work-section-bottom'>
 				{workInfoData.map((data) => (
 					<div className='work-section-info' key={data.title}>
