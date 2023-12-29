@@ -36,6 +36,9 @@ nav {
 	font-size: 40px;
 	color: #fe9e0d;
 }
+.nav-logo-container a {
+	text-decoration: none;
+}
 .navbar-links-container a {
 	margin-right: 3rem;
 	text-decoration: none;
@@ -63,6 +66,35 @@ nav {
 .navbar-menu-container svg {
 	font-size: 1.5rem;
 	cursor: pointer;
+}
+
+#mario {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	text-align: left;
+}
+
+#mario img {
+	margin: 40px 0;
+	width: 300px;
+	border-radius: 10%;
+}
+
+.musing-text {
+	font-size: 60px;
+	max-width: 1000px;
+	color: #484848;
+	margin: 1.5rem 0rem;
+}
+
+.mario-text {
+	font-size: clamp(1rem, 3vw, 1.5rem);
+	max-width: 1000px;
+	color: #6a6a6a;
+	margin: 1.5rem 0rem;
 }
 
 .home-container {

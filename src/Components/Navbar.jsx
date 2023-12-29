@@ -14,18 +14,19 @@ import AccessibilityNew from '@mui/icons-material/AccessibilityNew';
 import DirectionsCar from '@mui/icons-material/DirectionsCar';
 import ChildCare from '@mui/icons-material/ChildCare';
 import CommentRoundedIcon from '@mui/icons-material/CommentRounded';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 	const [openMenu, setOpenMenu] = useState(false);
 	const menuOptions = [
-		{
-			text: 'Homies',
-			icon: <AccessibilityNew />
-		},
-		{
-			text: 'GGOTM',
-			icon: <DirectionsCar />
-		},
+		// {
+		// 	text: 'Homies',
+		// 	icon: <AccessibilityNew />
+		// },
+		// {
+		// 	text: 'GGOTM',
+		// 	icon: <DirectionsCar />
+		// },
 		{
 			text: "Mario's Musings",
 			icon: <ChildCare />
@@ -34,12 +35,14 @@ const Navbar = () => {
 	return (
 		<nav>
 			<div className='nav-logo-container'>
-				<h1>GAS GANG</h1>
+				<Link to='/'>
+					<h1>GAS GANG</h1>
+				</Link>
 			</div>
 			<div className='navbar-links-container'>
-				<a href=''>Homies</a>
-				<a href=''>GGOTM</a>
-				<a href=''>Mario's Musings</a>
+				{/* <a href=''>Homies</a>
+				<a href=''>GGOTM</a> */}
+				<Link to='/musing'>Mario's Musings</Link>
 				<a
 					className='primary-button'
 					href='https://account.venmo.com/u/jameswu21'

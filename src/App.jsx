@@ -1,20 +1,18 @@
 import './App.css';
-import Home from './Components/Home';
-import About from './Components/About';
-import Work from './Components/Work';
-import Testimonial from './Components/Testimonial';
-import Contact from './Components/Contact';
+import Musing from './Musing';
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
+import Landing from './Landing';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
 	return (
 		<div className='App'>
 			<Navbar />
-			<Home />
-			<About />
-			<Work />
-			<Testimonial />
+			<Routes>
+				<Route path='/' element={<Landing />} />
+				<Route path='/musing' element={<Musing />} />
+			</Routes>
 			<Footer />
 		</div>
 	);
