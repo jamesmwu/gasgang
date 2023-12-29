@@ -29,6 +29,14 @@ nav {
 	justify-content: space-between;
 	min-height: 90px;
 }
+
+.listdrawerlink {
+	text-decoration: none;
+	color: black;
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
 .navbar-menu-container {
 	display: none;
 }
@@ -382,8 +390,8 @@ nav {
 }
 
 @media (max-width: 1200px) {
-	.nav-logo-container {
-		max-width: 140px;
+	.nav-logo-container h1 {
+		font-size: 30px;
 	}
 	.navbar-links-container {
 		display: none;

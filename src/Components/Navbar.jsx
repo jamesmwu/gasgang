@@ -19,17 +19,19 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
 	const [openMenu, setOpenMenu] = useState(false);
 	const menuOptions = [
-		// {
-		// 	text: 'Homies',
-		// 	icon: <AccessibilityNew />
-		// },
+		{
+			text: 'Homies',
+			icon: <AccessibilityNew />,
+			link: '/'
+		},
 		// {
 		// 	text: 'GGOTM',
 		// 	icon: <DirectionsCar />
 		// },
 		{
 			text: "Mario's Musings",
-			icon: <ChildCare />
+			icon: <ChildCare />,
+			link: '/musing'
 		}
 	];
 	return (
@@ -63,12 +65,14 @@ const Navbar = () => {
 				>
 					<List>
 						{menuOptions.map((item) => (
-							<ListItem key={item.text} disablePadding>
-								<ListItemButton>
-									<ListItemIcon>{item.icon}</ListItemIcon>
-									<ListItemText primary={item.text} />
-								</ListItemButton>
-							</ListItem>
+							<Link to={item.link} className='listdrawerlink'>
+								<ListItem key={item.text} disablePadding>
+									<ListItemButton>
+										<ListItemIcon>{item.icon}</ListItemIcon>
+										<ListItemText primary={item.text} />
+									</ListItemButton>
+								</ListItem>
+							</Link>
 						))}
 					</List>
 					<Divider />
