@@ -2,7 +2,7 @@
 	"name": "gasgang",
 	"private": true,
 	"version": "0.0.0",
-	"homepage": "https://jamesmwu.github.io/gasgang/",
+	"homepage": "https://gasgang.org",
 	"type": "module",
 	"scripts": {
 		"predeploy": "npm run build",
