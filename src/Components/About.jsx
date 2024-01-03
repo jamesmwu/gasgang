@@ -17,19 +17,17 @@ const About = () => {
 				<div className='about-section-text-container'>
 					<p className='primary-subheading'>Damn</p>
 					<h1 className='primary-heading'>We are all going through it</h1>
-					<p className='primary-text'>
-						"I wish I had cancer so I could get that $20"
-					</p>
+					<p className='primary-text'>"Another meal alone"</p>
 					<p className='secondary-text'>
-						- Mario, after hearing Ben donated $20 to cancer research
+						- Phillip, after no one wanted to eat with him
 					</p>
 					<div className='about-buttons-container'>
 						<a
 							className='secondary-button'
-							href='https://www.cancer.org/donate.html#:~:text=You%20can%20make%20your%20gift,send%20your%20donation%20by%20mail.'
+							href='https://drive.google.com/file/d/1FQSwixwMwNGClnnH8TgNaSJuobWA6DEV/view?usp=sharing'
 							target='_blank'
 						>
-							The Mario Fund <FiArrowRight />
+							There are two Wolves <FiArrowRight />
 						</a>
 					</div>
 				</div>
